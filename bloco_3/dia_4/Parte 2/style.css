@@ -50,6 +50,8 @@ aside{
     height: 675px;
     margin-top: 0;
     float: right;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 article{
