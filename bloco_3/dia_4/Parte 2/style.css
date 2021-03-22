@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: red;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.page-header{
+    background-color: green;
+    height: 20px;
+    padding: 10px;
+}
+
+.page-header ul li{
+    display: inline-block;
+}
+
+main{
+    background-color: blue;
+    display: inline-block;
+    width: 60%;
+    height: 400px;
+}
+
+
+
+aside{
+    background-color: orange;
+    display: inline-block;
+    width: 39%;
+    height: 400px;
+    margin-top: 0;
+    float: right;
+}
+
+article{
+    background-color: purple;
+    
+    
+}
+
+section{
+    background-color: brown;
+}
+
+footer{
+    background-color: cornflowerblue;
+}
