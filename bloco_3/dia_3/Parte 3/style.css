@@ -1,0 +1,21 @@
+body{
+    font-size: 48px;
+}
+
+
+.base-text{
+    text-align: center;
+}
+
+ol:hover{
+    background-color: aqua;
+}
+
+.liOrg:active{
+    font-family: sans-serif;
+    font-size: 110%;
+}
+
+ul, ol{
+    list-style: none;
+}
