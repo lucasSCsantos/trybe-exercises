@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+table, th, td{
+    border: solid black 2px;
+
+}
+
 header{
     background-color: red;
     height: 60px;
@@ -17,13 +22,23 @@ header{
 
 .page-header ul li{
     display: inline-block;
+    margin-right: 50px;
 }
+
+
+
+.page-header ul li:hover{
+    color: white;
+    border-left: solid black 2px;
+}
+
+
 
 main{
     background-color: blue;
     display: inline-block;
     width: 60%;
-    height: 400px;
+    
 }
 
 
@@ -32,19 +47,22 @@ aside{
     background-color: orange;
     display: inline-block;
     width: 39%;
-    height: 400px;
+    height: 675px;
     margin-top: 0;
     float: right;
 }
 
 article{
     background-color: purple;
-    
-    
+}
+
+article h2{
+    padding: 10px;
 }
 
 section{
     background-color: brown;
+    padding: 10px;
 }
 
 footer{
