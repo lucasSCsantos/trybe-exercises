@@ -9,17 +9,18 @@ table, th, td{
 }
 
 header{
-    background-color: red;
+    /* background-color: red; */
     height: 100px;
     padding: 18px;
     box-sizing: border-box;
     
     font-size: 180%;
     text-transform: uppercase;
+    
 }
 
 .page-header{
-    background-color: green;
+    /* background-color: green; */
     height: 50px;
     padding: 14px;
     box-sizing: border-box;
@@ -42,7 +43,7 @@ header{
 
 
 main{
-    background-color: blue;
+    /* background-color: blue; */
     display: inline-block;
     width: 60%;
     
@@ -51,7 +52,7 @@ main{
 
 
 aside{
-    background-color: orange;
+    /* background-color: orange; */
     display: inline-block;
     width: 39%;
     
@@ -63,7 +64,7 @@ aside{
 }
 
 article{
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 article h2{
@@ -82,12 +83,12 @@ h4{
 }
 
 section{
-    background-color: brown;
+    /* background-color: brown; */
     padding: 10px;
 }
 
 footer{
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     height: 200px;
     box-sizing: border-box;
     padding: 90px;
