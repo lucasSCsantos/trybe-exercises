@@ -68,6 +68,17 @@ article{
 
 article h2{
     padding: 10px;
+    font-size: 200%;
+    margin-left: 10px;
+}
+
+h3{
+    margin-left: 40px;
+    
+}
+
+h4{
+    margin-left: 60px;
 }
 
 section{
@@ -77,9 +88,9 @@ section{
 
 footer{
     background-color: cornflowerblue;
-    
-}
-
-h2{
-    font-size: 160%;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 90px;
+    font-size: 25px;
+    font-weight: lighter;
 }
