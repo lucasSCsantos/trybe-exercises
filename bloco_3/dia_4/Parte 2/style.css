@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: sans-serif;
 }
 
 table, th, td{
@@ -9,20 +10,26 @@ table, th, td{
 
 header{
     background-color: red;
-    height: 60px;
-    padding: 10px;
+    height: 100px;
+    padding: 18px;
     box-sizing: border-box;
+    
+    font-size: 180%;
+    text-transform: uppercase;
 }
 
 .page-header{
     background-color: green;
-    height: 20px;
-    padding: 10px;
+    height: 50px;
+    padding: 14px;
+    box-sizing: border-box;
+    font-size: 120%;
 }
 
 .page-header ul li{
     display: inline-block;
     margin-right: 50px;
+    margin-top: 2px;
 }
 
 
@@ -47,11 +54,12 @@ aside{
     background-color: orange;
     display: inline-block;
     width: 39%;
-    height: 675px;
+    
     margin-top: 0;
     float: right;
     padding: 30px;
     box-sizing: border-box;
+    height: 532px;
 }
 
 article{
@@ -69,4 +77,9 @@ section{
 
 footer{
     background-color: cornflowerblue;
+    
+}
+
+h2{
+    font-size: 160%;
 }
