@@ -20,7 +20,7 @@ header{
 }
 
 .page-header{
-    background-color: green; */
+    background-color: green;
     height: 50px;
     
     box-sizing: border-box;
@@ -61,10 +61,8 @@ main{
 
 
 aside{
-    background-color: orange; */
-    display: inline-block;
+    background-color: orange;
     width: 39%;
-    
     margin-top: 0;
     float: right;
     padding: 30px;
@@ -73,7 +71,8 @@ aside{
 }
 
 article{
-    background-color: purple; */
+    background-color: purple;
+    
 }
 
 article h2{
@@ -88,19 +87,38 @@ h3{
 }
 
 h4{
-    margin-left: 60px;
+    text-align: center;
 }
 
 section{
-    background-color: brown; */
+    background-color: brown;
     padding: 10px;
+    vertical-align: bottom;
+    
 }
 
 footer{
-    background-color: cornflowerblue; */
+    background-color: cornflowerblue;
     height: 200px;
     box-sizing: border-box;
     padding: 90px;
     font-size: 25px;
     font-weight: lighter;
 }
+
+.fact{
+    display: inline-block;
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    align-items: baseline;
+    vertical-align: bottom;
+    
+}
+
+div{
+    float: left;
+    vertical-align: bottom;
+    
+}
+
