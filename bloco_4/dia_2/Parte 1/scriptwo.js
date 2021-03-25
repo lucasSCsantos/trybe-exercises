@@ -1,0 +1,13 @@
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+
+let menuServices = menu[1] ; //Obtenha o valor "Serviços" do array menu :
+
+let indexOfPortfolio = menu.indexOf('Portfólio'); //Procure o índice do valor "Portfólio" do array menu :
+
+menu.push('Contato');
+
+
+
+console.log(menuServices);
+console.log(indexOfPortfolio);
+console.log(menu);
