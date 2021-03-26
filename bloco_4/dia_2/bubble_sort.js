@@ -32,3 +32,23 @@ for(let i2 = 0; i2 < numbers.length; i2 += 1){
 }
 
 console.log(numbers)
+
+//multiplica pelo proximo digito e coloca em uma nova string
+let array = []
+let tamanho = numbers.length;
+for(let i = 0; i < tamanho; i += 1){
+        let i2 = i + 1;
+        
+        if(i2 < tamanho){
+          let mult = numbers[i] * numbers[i2];
+          array.push(mult)
+        }
+        else{
+          let mult = numbers[i] * 2;
+          array.push(mult)
+        }
+          
+  
+}
+
+console.log(array)
