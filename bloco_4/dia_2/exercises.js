@@ -105,3 +105,4 @@ for(let numb of number){
     numb /= 2;
     console.log(numb)
 }
+
