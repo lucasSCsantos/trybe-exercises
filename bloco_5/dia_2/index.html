@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="paiDoPai">
+		<div id="pai">
+			<div id="primeiroFilho"></div>
+			<div id="elementoOndeVoceEsta">
+				<ul class="coisas"></ul>
+				<div id="primeiroFilhoDoFilho"></div>
+				<div id="segundoEUltimoFilhoDoFilho"></div>
+			</div>
+			Atenção!
+			<div id="terceiroFilho"></div>
+			<div id="quartoEUltimoFilho"></div>
+		</div>
+	</div>
+	<script>
+		var actualElementDad = document.getElementById("elementoOndeVoceEsta").parentNode;
+		var actualElement = document.getElementById("elementoOndeVoceEsta");
+		var neto = document.getElementById("primeiroFilhoDoFilho");
+		neto.innerText = "o bagulho é doidoo"
+		var firstSon = document.getElementById("pai").firstChild;
+		var actualElementSibling = document.getElementById("elementoOndeVoceEsta").previousSibling;
+		var atention = document.getElementById("elementoOndeVoceEsta").nextSibling;
+		var actualElementBrother = document.getElementById("elementoOndeVoceEsta").nextElementSibling;
+		var thirdSon = document.getElementById("pai").lastElementChild.previousElementSibling;
+		
+		var newElement = document.createElement("p")
+		newElement.innerText = "o bagulho é doidooo meu mano nao se esqueçaa"
+		actualElementDad.appendChild(newElement);
+	</script>
+</body>
+</html>
