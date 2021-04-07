@@ -16,7 +16,7 @@ myWebpage.addEventListener("click", changeRandomColor)
 function classNameTech(element){
 	const actualElement = element.target
 
-	if(actualElement === divUm || actualElement === divDois || actualElement === divTres ){
+	if(actualElement.parentNode === document.querySelector(".container") && actualElement.className !== "tech"){
 		const tech = document.querySelector(".tech")
 		tech.classList.remove("tech")
 	
