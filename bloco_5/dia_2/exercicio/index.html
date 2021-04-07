@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+			var body = document.querySelector("body");
+      var h1 = document.createElement("h1");
+			var div = document.createElement("div");
+      var centerDiv = document.createElement("div");
+      var leftDiv = document.createElement("div");
+      var rightDiv = document.createElement("div");
+      var paragraph = document.createElement("p");
+      var image = document.createElement("img");
+      let ul = document.createElement("ul");
+    
+      for(let index = 0; index < 10; index += 1){
+        var li = document.createElement("li")
+        li.innerText = "x"
+        ul.appendChild(li)
+      }
+
+      paragraph.innerText = "vigiai pois porque nao sabeis o dia nem a hora em que o filho do homem há de vir";
+      div.className = "main-content";
+      centerDiv .className = "center-content";
+      leftDiv.className = "left-content"
+      rightDiv.className = "right-content"
+      h1.innerText = "Exercício 5.2 - JavaScript DOM";
+      image.src = "https://picsum.photos/200"
+      image.className = "small-image"
+      h1.className = "title"
+      
+
+			body.appendChild(h1);
+      body.appendChild(div);
+      div.appendChild(centerDiv);
+      centerDiv.appendChild(paragraph);
+      div.appendChild(leftDiv);
+      div.appendChild(rightDiv);
+      leftDiv.appendChild(image)
+      rightDiv.appendChild(ul)
+
+      for(let index = 0; index < 3; index += 1){
+        var h3 = document.createElement("h3");
+        h3.innerText = "seriedade na função"
+        h3.className = "description"
+        div.appendChild(h3)
+      }
+
+      div.removeChild(leftDiv)
+
+      rightDiv.style.marginRight = "auto"
+
+      centerDiv.parentElement.style.backgroundColor = "green"
+
+      ul.removeChild(ul.lastChild)
+      ul.removeChild(ul.lastChild.previousSibling)
+			
+    </script>
+  </body>
+</html>
