@@ -44,6 +44,11 @@ input.addEventListener("keyup", function(evento){
 		const compromisse = document.createElement("span");
 	
 		compromisse.innerText = document.querySelector("input").value;
+
+		if(document.querySelector("input").value === ""){
+			window.alert("ERRO!")
+			return false
+		}
 	
 		document.querySelector(".input-container").appendChild(compromisse);
 	
@@ -165,6 +170,11 @@ function compromisseCreate(){
 	const compromisse = document.createElement("span");
 
 	compromisse.innerText = document.querySelector("input").value;
+
+	if(document.querySelector("input").value === ""){
+		window.alert("ERRO!")
+		return false
+	}
 
 	document.querySelector(".input-container").appendChild(compromisse);
 
