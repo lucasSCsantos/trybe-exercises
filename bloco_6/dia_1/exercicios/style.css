@@ -1,0 +1,13 @@
+fieldset{
+	width: 2px;
+}
+
+label{
+	margin-top: 20px;
+	display: inline-block
+}
+
+p{
+	margin-top: 20px;
+	display: inline-block;
+}

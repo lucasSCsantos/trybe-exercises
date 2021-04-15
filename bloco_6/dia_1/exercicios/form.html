@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+	<title>Exercicio Forms</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Formulario</h1>
+	<form action="" method="GET">
+		<fieldset>
+			<legend>Bagulho</legend>
+			<label for="nome">Nome:</label>
+			<input type="text" maxlength="40" required name="name" id="nome">
+			<br>
+			<label for="email">Email:</label>
+			<input type="text" maxlength="50" required name="email" id="email">
+			<br>
+			<label for="cpf">CPF:</label>
+			<input type="text" maxlength="14" required name="cpf" id="cpf">
+			<br>
+			<label for="adress">Endereço:</label>
+			<input type="text" maxlength="200" required name="endereco" id="adress">
+			<br>
+			<label for="city">Cidade:</label>
+			<input type="text" maxlength="28" required name="cidade" id="city">
+			<br>
+			<label for="states">Estado:</label>
+			<select name="estado" id="states">
+			</select>
+			<br>
+			<p>Tipo:</p>
+			<br>
+			<input type="radio" name="casa" id="house" value="Casa">Casa
+			<input type="radio" name="casa" id="apart" value="Apartamento">Apartamento
+		</fieldset>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
