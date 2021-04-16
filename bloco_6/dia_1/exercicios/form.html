@@ -2,37 +2,107 @@
 <html lang="br">
 <head>
 	<title>Exercicio Forms</title>
+	<link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<h1>Formulario</h1>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif;">
+	<section class="section">
+		<h1 class="title is-1">Formulario</h1>
+		<h2 class="subtitle">Um simples forms de exercicio</h2>
+	</section>
 	<form action="" method="GET">
-		<fieldset>
-			<legend>Bagulho</legend>
-			<label for="nome">Nome:</label>
-			<input type="text" maxlength="40" required name="name" id="nome">
+		<section class="section" id="first">
+			<div class="field">
+				<label for="nome">Nome:</label>
+				<div class="control">
+					<input type="text" maxlength="40" required name="name" id="nome">
+				</div>
+			</div>
 			<br>
-			<label for="email">Email:</label>
-			<input type="text" maxlength="50" required name="email" id="email">
+			<div class="field">
+				<label for="email">Email:</label>
+				<div class="control">
+					<input type="text" maxlength="50" required name="email" id="email">
+				</div>
+			</div>
 			<br>
-			<label for="cpf">CPF:</label>
-			<input type="text" maxlength="14" required name="cpf" id="cpf">
+			<div class="field">
+				<label for="cpf">CPF:</label>
+				<div class="control">
+					<input type="text" maxlength="14" required name="cpf" id="cpf">
+				</div>
+			</div>
 			<br>
-			<label for="adress">Endereço:</label>
-			<input type="text" maxlength="200" required name="endereco" id="adress">
+			<div class="field">
+				<label for="adress">Endereço:</label>
+				<div class="control">
+					<input type="text" maxlength="200" required name="endereco" id="adress">
+				</div>
+			</div>
 			<br>
-			<label for="city">Cidade:</label>
-			<input type="text" maxlength="28" required name="cidade" id="city">
+			<div class="field">
+				<label for="city">Cidade:</label>
+			</div>
+			<div class="control">
+				<input type="text" maxlength="28" required name="cidade" id="city">
+			</div>
 			<br>
-			<label for="states">Estado:</label>
-			<select name="estado" id="states">
-			</select>
+			<div class="field">
+				<label for="states">Estado:</label>
+			</div>
+			<div class="control">
+				<div class="select">
+					<select name="estado" id="states">
+					</select>
+				</div>
+			</div>
 			<br>
 			<p>Tipo:</p>
 			<br>
-			<input type="radio" name="casa" id="house" value="Casa">Casa
-			<input type="radio" name="casa" id="apart" value="Apartamento">Apartamento
-		</fieldset>
+			<div class="field">
+				<div class="control">
+					<label class="radio">
+						<input type="radio" name="casa" id="house" value="Casa">
+						Casa
+					</label>
+					<label class="radio">
+						<input type="radio" name="casa" id="apart" value="Apartamento">
+						Apartamento
+					</label>
+				</div>
+			</div>
+		</section>
+			<section class="section" id="second">
+				<div class="field">
+					<label>Resumo do Curriculo:</label>
+					<div class="control">
+						<textarea name="resumo" id="resum" cols="22" rows="10" maxlength="1000" required></textarea>
+					</div>
+				</div>
+				<br>
+				<div class="field">
+					<label>Cargo:</label>
+					<div class="control">
+						<input type="text" name="cargo" id="function" maxlength="40" required>
+					</div>
+				</div>
+				<br>
+				<div class="field">
+					<label>Descrição do cargo:</label>
+					<div class="control">
+						<input type="text" name="descricao" id="description" maxlength="500" required>
+					</div>
+				</div>
+				<br>
+				<div class="field">
+					<label>Data de início:</label>
+					<div class="control">
+						<input type="text" name="data" id="data" required>
+					</div>
+				</div>
+				<br>
+				<button type="submit" id="submit">Submit</button>
+			</section>
 	</form>
 	<script src="script.js"></script>
 </body>

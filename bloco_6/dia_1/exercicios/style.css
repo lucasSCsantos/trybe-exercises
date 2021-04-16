@@ -1,13 +1,8 @@
-fieldset{
-	width: 2px;
+#first {
+	float: left;
 }
 
-label{
-	margin-top: 20px;
-	display: inline-block
-}
-
-p{
-	margin-top: 20px;
-	display: inline-block;
+#second {
+	float: right;
+	
 }
