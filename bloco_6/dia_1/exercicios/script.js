@@ -29,6 +29,10 @@ const estados = [
 ];
 const select = document.querySelector('select');
 
+document.getElementById('data').DatePickerX.init()
+
+
+
 function stateAppend() {
 	for(let estado of estados){
 		const option = document.createElement('option');
@@ -40,16 +44,5 @@ function stateAppend() {
 stateAppend();
 
 const submitButton = document.querySelector('#submit');
+
 const inputData = document.getElementById('data')
-
-function dataCheck() {
-	const inputDataValue = document.getElementById('data').value;
-	const returned = inputDataValue.split('/');
-	if((returned[0] < 0 || returned[0] > 31) || (returned[1] > 12 || returned[1] < 0) || (returned[2] < 0 )){
-		window.alert('Erro! Data invalida!')
-	}
-
-}
-
-
-submitButton.addEventListener('keyup', dataCheck);

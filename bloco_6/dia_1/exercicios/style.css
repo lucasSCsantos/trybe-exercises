@@ -4,5 +4,6 @@
 
 #second {
 	float: right;
-	
+	position: absolute;
+	margin-left: 250px;
 }

@@ -4,51 +4,56 @@
 	<title>Exercicio Forms</title>
 	<link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="dist/css/DatePickerX.css">
+	<script src="dist/js/DatePickerX.min.js"></script>
+	<link href="popup-validation/bin/validation.min.css" rel="stylesheet">
+	<script src="popup-validation/bin/validation.min.js"></script> 
+	<script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
 </head>
 <body style="font-family: Georgia, 'Times New Roman', Times, serif;">
 	<section class="section">
 		<h1 class="title is-1">Formulario</h1>
 		<h2 class="subtitle">Um simples forms de exercicio</h2>
 	</section>
-	<form action="" method="GET">
+	<form action="" method="GET" id="formed">
 		<section class="section" id="first">
 			<div class="field">
-				<label for="nome">Nome:</label>
+				<label class="label" class="label">Nome:</label>
 				<div class="control">
-					<input type="text" maxlength="40" required name="name" id="nome">
+					<input type="text" maxlength="40" name="name" id="nome" class="validate js-validate-error-field" data-validate-field="name" name="name">
 				</div>
 			</div>
 			<br>
 			<div class="field">
-				<label for="email">Email:</label>
+				<label class="label" for="email">Email:</label>
 				<div class="control">
-					<input type="text" maxlength="50" required name="email" id="email">
+					<input type="text" maxlength="50" name="email" id="email" data-validate-field="email">
 				</div>
 			</div>
 			<br>
 			<div class="field">
-				<label for="cpf">CPF:</label>
+				<label class="label" for="cpf">CPF:</label>
 				<div class="control">
-					<input type="text" maxlength="14" required name="cpf" id="cpf">
+					<input type="text" maxlength="14" name="cpf" id="cpf">
 				</div>
 			</div>
 			<br>
 			<div class="field">
-				<label for="adress">Endereço:</label>
+				<label class="label" for="adress">Endereço:</label>
 				<div class="control">
-					<input type="text" maxlength="200" required name="endereco" id="adress">
+					<input type="text" maxlength="200" name="endereco" id="adress">
 				</div>
 			</div>
 			<br>
 			<div class="field">
-				<label for="city">Cidade:</label>
+				<label class="label" for="city">Cidade:</label>
 			</div>
 			<div class="control">
-				<input type="text" maxlength="28" required name="cidade" id="city">
+				<input type="text" maxlength="28" name="cidade" id="city">
 			</div>
 			<br>
 			<div class="field">
-				<label for="states">Estado:</label>
+				<label class="label" for="states">Estado:</label>
 			</div>
 			<div class="control">
 				<div class="select">
@@ -76,28 +81,28 @@
 				<div class="field">
 					<label>Resumo do Curriculo:</label>
 					<div class="control">
-						<textarea name="resumo" id="resum" cols="22" rows="10" maxlength="1000" required></textarea>
+						<textarea name="resumo" id="resum" cols="24" rows="7" maxlength="1000"></textarea>
 					</div>
 				</div>
 				<br>
 				<div class="field">
 					<label>Cargo:</label>
 					<div class="control">
-						<input type="text" name="cargo" id="function" maxlength="40" required>
+						<input type="text" name="cargo" id="function" maxlength="40">
 					</div>
 				</div>
 				<br>
 				<div class="field">
 					<label>Descrição do cargo:</label>
 					<div class="control">
-						<input type="text" name="descricao" id="description" maxlength="500" required>
+						<input type="text" name="descricao" id="description" maxlength="500">
 					</div>
 				</div>
 				<br>
 				<div class="field">
 					<label>Data de início:</label>
 					<div class="control">
-						<input type="text" name="data" id="data" required>
+						<input type="text" name="data" id="data">
 					</div>
 				</div>
 				<br>
