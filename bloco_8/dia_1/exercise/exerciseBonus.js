@@ -13,7 +13,7 @@ const warrior = {
 };
 
 const dragon = {
-  healthPoints: 350,
+  healthPoints: 700,
   strength: 50,
   damage: undefined,
 };
@@ -45,10 +45,6 @@ const mageDamage = () => {
 	return {  damage, consumedMana,  }
 }
 
-
-
-
-
 const gameActions = {
 	warriorAttack: (action) => {
 		const damage = action();
@@ -74,53 +70,32 @@ const mageHealth = mage.healthPoints;
 const warriorHealth = warrior.healthPoints;
 const dragonHealth = dragon.healthPoints;
 
-// const completeGame = (a) => {
-// 	const firstFunction = a();
-// 	firstFunction();
-// 		// b();
-// 		// c();
-// 		// console.log(final());
-// 	// for (; mageHealth !== 0 || warriorHealth !== 0 || dragonHealth !== 0;){
-// 	// 	a();
-// 	// 	b();
-// 	// 	c();
-// 	// 	console.log(final());
-// 	// }
+const gameLoop = () => {
+	console.log(gameActions.roundEnd());
 
-// }
+	const mageHealth = mage.healthPoints;
+	const warriorHealth = warrior.healthPoints;
+	const dragonHealth = dragon.healthPoints;
 
-// const mageHealth = mage.healthPoints;
-// const warriorHealth = warrior.healthPoints;
-// const dragonHealth = dragon.healthPoints;
+	gameActions.warriorAttack(warriorDamage);
+	gameActions.dragonAttack(dragonDamage);
+	gameActions.mageAttack(mageDamage);
 
-console.log(gameActions.roundEnd())
+	if (mageHealth < 0 && warriorHealth < 0) {
+		console.log('cabou o jogo o dragão venceu');
+		return true;
+	} else if (dragonHealth < 0) {
+		console.log('cabou o jogo os guerreiros venceram')
+		return true
+	}
 
-const completeGame = (a, b, c, d) => {
-	for (; mage.healthPoints > 0 && warrior.healthPoints > 0 && dragon.healthPoints > 0;){
-		const function1 = (a) => a;
-		function1(warriorDamage);
-		const function2 = (b) => b;
-		function2(dragonDamage);
-		const function3 = (c) => c;
-		function3(mageDamage);
-		console.log(d);
-		
-		}
+	gameLoop();
+	
 }
 
-completeGame(gameActions.warriorAttack(warriorDamage), gameActions.dragonAttack(dragonDamage), gameActions.mageAttack(mageDamage), gameActions.roundEnd());
+gameLoop();
 
-// for (; mage.healthPoints > 0 && warrior.healthPoints > 0 && dragon.healthPoints > 0;){
-
-// gameActions.warriorAttack(warriorDamage);
-// gameActions.dragonAttack(dragonDamage);
-// gameActions.mageAttack(mageDamage);
-// console.log(gameActions.roundEnd())
-
-// }
-
-
-// gameActions.warriorAttack(warriorDamage);
-// gameActions.mageAttack(mageDamage);
-// gameActions.dragonAttack(dragonDamage);
-// console.log(gameActions.roundEnd())
+// gameActions.warriorAttack(warriorDamage), 
+// gameActions.dragonAttack(dragonDamage), 
+// gameActions.mageAttack(mageDamage), 
+// console.log(gameActions.roundEnd());

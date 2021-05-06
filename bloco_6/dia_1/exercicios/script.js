@@ -29,6 +29,7 @@ const estados = [
 ];
 const select = document.querySelector('select');
 
+const funcionar = new window.JustValidate('form'); 
 document.getElementById('data').DatePickerX.init()
 
 

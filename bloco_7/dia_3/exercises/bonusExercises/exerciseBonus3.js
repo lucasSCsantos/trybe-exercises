@@ -4,7 +4,6 @@ const removeMiddle = (array) => {
 	const middle = Math.floor((array.length / 2))
 	const middleWord = [array[middle]];
 	array.splice(middle, 1);
-
 	return middleWord;
 }
 
