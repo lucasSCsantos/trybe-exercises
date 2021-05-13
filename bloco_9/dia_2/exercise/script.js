@@ -12,7 +12,7 @@ const fetchJoke = () => {
   fetch(API_URL, myObject)
     .then(response => response.json())
     .then(data => joke = data.joke)
-		.then(joke => h2.innerText = joke)
+		.then(joke => document.querySelector('h2').innerText = joke)
 };
 
 window.onload = () => {
